@@ -1,6 +1,9 @@
-const Discord = require("discord.js");
+onst Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "+";
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
 var adminprefix = '#'
 
 
